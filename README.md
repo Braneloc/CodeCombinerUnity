@@ -6,7 +6,7 @@ A lightweight toolkit that allows Unity code folders to be combined
 
 Unity Editor → Window ▸ Package Manager<br>
 ➕ Add package from Git URL<br>
-https://github.com/Braneloc/CodeCombiner.git
+https://github.com/Braneloc/CodeCombinerUnity.git
 
 _Unity downloads the package and recompiles scripts automatically._
 
