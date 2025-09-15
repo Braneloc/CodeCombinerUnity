@@ -14,7 +14,8 @@ _Unity downloads the package and recompiles scripts automatically._
 
 - Combines all code files in a folder into one file
 - Seperates Editor, Code and Test files
-- Creates a .json type index
+- Creates a .json file index
+- Creates a .json list of classes
 - Optionally recurse through any subfolders
 - Zips the large created file ready for upload
 
@@ -31,7 +32,19 @@ _Unity downloads the package and recompiles scripts automatically._
 
 ## Files
 - The files are stored in the root of your _project_ folder, under _combined-code_ next to the Assets folder.<br>
-I hope that made sense.
+
+```
+Project Root
+  Assets
+    FolderWithScripts
+      script1.cs
+      script2.cs
+  combined-code
+    FolderWithScripts-main.cs
+    FolderWithScripts-main.json
+    FolderWithScripts-types.json
+
+```
 
 ## Party on dudes  
 ![](https://avatars.githubusercontent.com/u/9757397?s=96&v=4)
