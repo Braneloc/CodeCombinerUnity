@@ -12,12 +12,12 @@ _Unity downloads the package and recompiles scripts automatically._
 
 ## Features
 
-- Combines all code files in a folder into one file
+- Combines all code files in a folder into one **-main.cs** file <br>_(Recommended for upload)_
 - Seperates Editor, Code and Test files
 - Creates a .json file index
 - Creates a .json list of classes
 - Optionally recurse through any subfolders
-- Zips the large created file ready for upload
+- Zips the large created file ready for upload <br>_(Only upload if the **-main.cs** is very large)_
 
 ## Problems this project solves
 
@@ -28,7 +28,7 @@ _Unity downloads the package and recompiles scripts automatically._
 - From the tools menu
 - Tools ▸ Code ▸ Combine C# Files
 - Drag and drop a Unity code folder from the Project window.
-- Combine and save
+- Click Combine and save
 
 ## Files
 - The files are stored in the root of your _project_ folder, under _combined-code_ next to the Assets folder.<br>
@@ -43,6 +43,7 @@ Project Root
     FolderWithScripts-main.cs
     FolderWithScripts-main.json
     FolderWithScripts-types.json
+    FolderWithScripts-Upload.zip
 
 ```
 
