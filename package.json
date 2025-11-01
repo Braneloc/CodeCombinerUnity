@@ -1,10 +1,11 @@
 {
-  "version": "0.9.5",
+  "version": "0.9.6",
   "name": "uk.exo-labs.codecombiner",
   "displayName": "Code Combiner",
   "description": "Editor helper to create combined .cs files for a Unity folder.\nUsage: Tools/Code/Combine CS Files\nDrag drop Unity folder of interest from the project window.  Click combine !\nAll files in that particular folder will be combined into one. ",
   "author": {
     "name": "Braneloc"
   },
-  "unity": "6000.0"
+  "unity": "6000.0",
+  "hideInEditor": false
 }
