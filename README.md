@@ -1,4 +1,4 @@
-﻿# Code Combiner for Unity
+# Code Combiner for Unity
 
 A lightweight toolkit that allows Unity code folders to be combined
 
