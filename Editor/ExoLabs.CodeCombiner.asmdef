@@ -1,5 +1,8 @@
 {
-    "name": "Exo-Labs.CodeCombiner.Editor",
+    "name": "ExoLabs.CodeCombiner.Editor",
+    "rootNamespace": "",
+    "references": [],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
