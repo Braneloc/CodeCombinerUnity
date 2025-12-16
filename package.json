@@ -1,8 +1,8 @@
 {
-  "version": "0.9.7",
+  "version": "1.0.0",
   "name": "uk.exo-labs.codecombiner",
-  "displayName": "Code Combiner",
-  "description": "Editor helper to create combined .cs files for a Unity folder.\nUsage: Tools/Code/Combine CS Files\nDrag drop Unity folder of interest from the project window.  Click combine !\nAll files in that particular folder will be combined into one. ",
+  "displayName": "Exo-Labs Code Combiner",
+  "description": "Editor helper to create combined .cs files for a Unity folder.\nUsage: Tools/Code/Combine CS Files\nDrag drop Unity folder of interest from the project window.  Click combine !\nAll files in that particular folder will be combined into one.",
   "author": {
     "name": "Braneloc"
   },
