@@ -22,7 +22,7 @@ public class CombineCsFiles : EditorWindow
     const int MAX_LINES_PER_PART = 12000;
     static readonly UTF8Encoding UTF8NoBom = new(false);
 
-    [MenuItem("Tools/Code/Combine C# Files…")]
+    [MenuItem("Tools/ExoLabs/Combine C# Files…")]
     static void ShowWindow() => GetWindow<CombineCsFiles>("Combine C# Files");
 
     void OnGUI()
