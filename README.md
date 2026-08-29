@@ -46,7 +46,7 @@ Project Root
 
 ```
 ## Notes
-- Disclaimer: Parts of this project were co-created by an AI LLM.
+- Disclaimer: Parts of this project were co-created by ChatGPT.
 
 ## Party on dudes  
 ![](https://avatars.githubusercontent.com/u/9757397?s=96&v=4)
