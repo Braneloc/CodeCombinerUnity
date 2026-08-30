@@ -1,6 +1,6 @@
 # Code Combiner for Unity
 
-A lightweight toolkit that allows Unity code folders to be combined
+A lightweight toolkit that allows Unity code folders to be combined.
 
 ## Installation
 
@@ -13,19 +13,19 @@ _Unity downloads the package and recompiles scripts automatically._
 ## Features
 
 - Combines all code files in a folder into one **-main.cs** file <br>_(Recommended for upload)_
-- Seperates Editor, Code and Test files
+- Separates Editor, code, and test files
 - Creates a .json file index
 - Creates a .json list of classes
-- Optionally recurse through any subfolders
+- Optionally recurses through subfolders
 - Zips the large created file ready for upload <br>_(Only upload if the **-main.cs** is very large)_
 
 ## Problems this project solves
-- Instead of uploading large amounts of small code files for review, you can upload a combined code file instead reducing file requirements or cognative load.
+- Instead of uploading large numbers of small code files for review, you can upload one combined code file, reducing file requirements and cognitive load.
 - It is easier to upload a whole folder as a combined code file.
 
 ## Usage
-- From the tools menu
-- Tools ▸ Code ▸ Combine C# Files
+- From the Tools menu
+- Tools ▸ ExoLabs ▸ Combine C# Files
 - Drag and drop a Unity code folder from the Project window.
 - Click Combine and save
 

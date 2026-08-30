@@ -18,7 +18,7 @@ insert_final_newline = false
 
 #### .NET Coding Conventions ####
 
-# Organize usings
+# Organise usings
 dotnet_separate_import_directive_groups = true
 dotnet_sort_system_directives_first = false
 file_header_template = unset
@@ -280,9 +280,9 @@ dotnet_style_qualification_for_method = false:silent
 dotnet_style_qualification_for_event = false:silent
 dotnet_style_prefer_collection_expression = when_types_loosely_match:suggestion
 
-[*.{cs,vb}]                                         //specify which files the spelling options apply to
-spelling_languages = en-uk,en-gb,en-us                    //specifies the en-us and fr-fr dictionaries for use in spell checking
-spelling_checkable_types = identifiers,comments     //specifies that identifiers and comments are the only checked elements
-spelling_error_severity = error                     //sets severity assigned to spelling errors to error in the error list
-spelling_exclusion_path = exclusion.dic             //defines a custom exclusion dictionary location and file
-spelling_use_default_exclusion_dictionary = false   //ignores the language-specific default exclusion dictionary
+[*.{cs,vb}]                                         // specifies which files the spelling options apply to
+spelling_languages = en-gb                          // uses the British English dictionary for spell checking
+spelling_checkable_types = identifiers,comments     // specifies that identifiers and comments are the only checked elements
+spelling_error_severity = error                     // sets severity assigned to spelling errors to error in the error list
+spelling_exclusion_path = exclusion.dic             // defines a custom exclusion dictionary location and file
+spelling_use_default_exclusion_dictionary = false   // ignores the language-specific default exclusion dictionary
