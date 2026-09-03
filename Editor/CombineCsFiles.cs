@@ -72,9 +72,9 @@ public class CombineCsFiles : EditorWindow
 
             var buffers = new Dictionary<string, StringBuilder>
             {
-                ["main"] = new StringBuilder(4096),
-                ["test"] = new StringBuilder(2048),
-                ["editor"] = new StringBuilder(2048)
+                ["main"] = new(4096),
+                ["test"] = new(2048),
+                ["editor"] = new(2048)
             };
             var lineCounts = new Dictionary<string, int>
             {
@@ -128,7 +128,7 @@ public class CombineCsFiles : EditorWindow
 
                     if (!includesMap.TryGetValue(combinedKey, out var list))
                     {
-                        list = new List<string>();
+                        list = new();
                         includesMap[combinedKey] = list;
                     }
                     list.Add(relAsset);
