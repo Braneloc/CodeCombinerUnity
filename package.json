@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "name": "uk.exo-labs.codecombiner",
   "displayName": "Exo-Labs Code Combiner",
   "description": "Editor helper for combining the C# files in a Unity folder.\nUsage: Tools/ExoLabs/Combine C# Files\nDrag and drop a Unity folder from the Project window, then select Combine & Save.",
