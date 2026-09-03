@@ -19,8 +19,8 @@ public class CombineCsFiles : EditorWindow
     bool generateTypeIndex = true;
     string status = "Idle";
 
-    const int MAX_LINES_PER_PART = 12000;
-    static readonly UTF8Encoding UTF8NoBom = new(false);
+    const int maxLinesPerPart = 12000;
+    static readonly UTF8Encoding utf8NoBom = new(false);
 
     [MenuItem("Tools/ExoLabs/Combine C# Files…")]
     static void ShowWindow() => GetWindow<CombineCsFiles>("Combine C# Files");
@@ -133,7 +133,7 @@ public class CombineCsFiles : EditorWindow
                     }
                     list.Add(relAsset);
 
-                    if (lineCounts[category] + lines > MAX_LINES_PER_PART && lineCounts[category] > 0)
+                    if (lineCounts[category] + lines > maxLinesPerPart && lineCounts[category] > 0)
                     {
                         string flushed = WriteBuffer(buffers[category], combinedRoot, folderName, category, partNum[category]);
                         if (!string.IsNullOrEmpty(flushed))
@@ -193,7 +193,7 @@ public class CombineCsFiles : EditorWindow
                 sb.AppendLine("  }");
                 sb.AppendLine("}");
                 string tiPath = Path.Combine(combinedRoot, $"{folderName}-types.json");
-                File.WriteAllText(tiPath, sb.ToString(), UTF8NoBom);
+                File.WriteAllText(tiPath, sb.ToString(), utf8NoBom);
                 createdFiles.Add(tiPath);
             }
 
@@ -249,7 +249,7 @@ public class CombineCsFiles : EditorWindow
     {
         if (sb.Length == 0) return string.Empty;
         string path = Path.Combine(root, GetCombinedFileName(folder, category, part));
-        File.WriteAllText(path, sb.ToString(), UTF8NoBom);
+        File.WriteAllText(path, sb.ToString(), utf8NoBom);
         Debug.Log($"Wrote {path}");
         return path;
     }
@@ -270,7 +270,7 @@ public class CombineCsFiles : EditorWindow
         sb.AppendLine("  ]");
         sb.AppendLine("}");
         string jsonPath = Path.ChangeExtension(combinedFilePath, ".json");
-        File.WriteAllText(jsonPath, sb.ToString(), UTF8NoBom);
+        File.WriteAllText(jsonPath, sb.ToString(), utf8NoBom);
     }
 }
 #endif
